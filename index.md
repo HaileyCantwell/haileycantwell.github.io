@@ -78,22 +78,23 @@
 <div class="content">
   <section class="resume-section">
     <h2>About Me</h2>
-    <p>Hello! I am [Your Name], a [Your Profession] with experience in [Your Expertise].</p>
+    <p>Hello! I am Hailey Cantwell, a senior at Southern New Hampshire University with experience in Psychology with a concentration in child development and a minor in research.</p>
   </section>
 
   <section class="resume-section">
     <h2>Work Experience</h2>
-    <p>Include your work experience here.</p>
+    <p>Farmsteads of New England 8/2024-Current</p>
+    <p>Psychology Major Ambassador - Southern New Hampshire University 8/2024-Current</p>
   </section>
 
   <section class="resume-section">
     <h2>Education</h2>
-    <p>List your educational background here.</p>
+    <p>Southern New Hampshire University - Class 2025.</p>
   </section>
 
   <section class="resume-section">
     <h2>Skills</h2>
-    <p>Highlight your skills here.</p>
+    <p>Research, analytical skills</p>
   </section>
 </div>
 
