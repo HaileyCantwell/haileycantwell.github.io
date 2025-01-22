@@ -1,3 +1,5 @@
-theme: jekyll-theme-architect
+theme: remote_theme: pages-themes/time-machine@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 title: Well, Hello There!
 description: This is a template homepage which you can use to host examples of your work. You can think of this as a digital portfolio for yourself.
