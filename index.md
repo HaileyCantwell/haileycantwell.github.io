@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -97,10 +96,10 @@
     <div class="about-container">
       <div class="about-text">
         <h2>About Me</h2>
-        <p>Hello! I am [Your Name], a [Your Profession] with experience in [Your Expertise].</p>
+        <p>Hello! My name is Hailey Cantwell, I am currently a senior studying psychology with a concentration in child and adolescent development and a minor in research. </p>
       </div>
       <div class="about-photo">
-        <img src="your-photo.jpg" alt="Your Photo">
+        <img src="462088368_9126027347429766_7566780716905499347_n.jpg" alt="Your Photo">
       </div>
     </div>
   </section>
