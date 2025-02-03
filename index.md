@@ -98,7 +98,7 @@
     <div class="about-container">
       <div class="about-text">
         <h2>About Me</h2>
-        <p>My name is Hailey Cantwell, a senior studying psychology with a concentration in child and adolescent development and a minor in research. I am an extremely hard worker, a critical thinker, and work very well in a fast-paced environment. I am someone who enjoys continuing to further my knowledge and understanding. Check out my LinkedIn profile: <a href="http://www.linkedin.com/in/hailey-c-7a7204132" target="_blank">Hailey Cantwell</a></p>
+        <p>My name is Hailey Cantwell, a senior studying psychology with a concentration in child and adolescent development and a minor in research. I am an extremely hard worker, a critical thinker, and I work very well in a fast-paced environment. I am someone who enjoys continuing to further my knowledge and understanding. Check out my LinkedIn profile: <a href="http://www.linkedin.com/in/hailey-c-7a7204132" target="_blank">Hailey Cantwell</a></p>
       </div>
       <div class="about-photo">
         <img src="462088368_9126027347429766_7566780716905499347_n.jpg" alt="Your Photo">
@@ -108,30 +108,30 @@
 
   <section class="resume-section">
     <h2>Work Experience</h2>
-    <p><strong>DSP (Direct Support Professional)</strong> - Farmsteads of New England, Inc. (Aug 2024 - Present)</p>
+    <p><strong>DSP (Direct Support Professional)</strong> - <i>Farmsteads of New England, Inc. (Aug 2024 - Present) </i></p>
     <p>Support adults with intellectual and developmental disabilities in a residential setting</p>
 
-    <p><strong> Psychology Major Ambassador</strong> - Southern New Hampshire University (Aug 2024 - Present)</p>
+    <p><strong> Psychology Major Ambassador</strong> - <i>Southern New Hampshire University (Aug 2024 - Present) </i></p>
     <p>Develop posts and events to enhance first-year psychology students' academic and social experiences</p>
-    <p><strong>Server/Bartender</strong> - The Barley House (Apr 2021 - Aug 2024)</p>
+    <p><strong>Server/Bartender</strong> - <i>The Barley House (Apr 2021 - Aug 2024)</i></p>
     <p>Ensure customer satisfaction, prepare drinks, manage service operations</p>
     
-    <p><strong>Teacher's Assistant</strong> - Children’s Central Learning Center (Jun 2019 - Aug 2019)</p>
+    <p><strong>Teacher's Assistant</strong> - <i>Children’s Central Learning Center (Jun 2019 - Aug 2019)</i></p>
     <p>Worked with children from infants to PreK, assisting teachers and facilitating activities...</p>
   </section>
 
   <section class="resume-section">
     <h2>Education</h2>
-    <p><strong>Bachelor's in Child and Adolescent Psychology</strong> - Southern New Hampshire University (Aug 2023 - May 2025)</p>
-    <p><strong>Early Childhood & Special Education</strong> - Arcadia University (Aug 2018 - Dec 2020)</p>
+    <p><strong>Bachelor's in Child and Adolescent Psychology</strong> - <i> Southern New Hampshire University (Aug 2023 - May 2025)</i></p>
+    <p><strong>Early Childhood & Special Education</strong> - <i> Arcadia University (Aug 2018 - Dec 2020) </i></p>
   </section>
 
   <section class="resume-section">
     <h2>Volunteer Work</h2>
-    <p><strong>Volunteer</strong> - 21st Century Afterschool Program (Sep 2024 - Dec 2024)</p>
+    <p><strong>Volunteer</strong> - <i>21st Century Afterschool Program (Sep 2024 - Dec 2024)</i></p>
     <p>Assisted teachers and students with classroom management and educational activities...</p>
     
-    <p><strong>Volunteer Teacher's Assistant</strong> - Gemma Services (Sep 2019 - Mar 2020)</p>
+    <p><strong>Volunteer Teacher's Assistant</strong> - <i>Gemma Services (Sep 2019 - Mar 2020)</i></p>
     <p>Worked with students with emotional disturbances, assisting in small group lessons...</p>
     
   </section>
