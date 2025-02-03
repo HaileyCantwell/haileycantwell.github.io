@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +12,12 @@
       margin: 0;
       padding: 0;
       background-color: #2b3a2e; /* Dark Earthy Green */
-      color: #d4d7b6; /* Soft Neutral Text */
+      color: #f5f5f5; /* Light, Readable Text */
     }
 
     header {
       background: #3e5c41; /* Deep Forest Green */
-      color: #e8f5e9;
+      color: #ffffff;
       padding: 20px;
       text-align: center;
       position: sticky;
@@ -37,6 +36,23 @@
       padding-left: 10px;
     }
 
+    .about-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .about-photo img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
     .theme-toggle {
       position: fixed;
       bottom: 20px;
@@ -52,12 +68,12 @@
 
     .dark-theme {
       background-color: #1e2a24; /* Even Darker Green */
-      color: #c3c7a6;
+      color: #ffffff;
     }
 
     .dark-theme header {
       background: #2b3a2e;
-      color: #e8f5e9;
+      color: #ffffff;
     }
 
     .dark-theme .theme-toggle {
@@ -78,8 +94,15 @@
 
 <div class="content">
   <section class="resume-section">
-    <h2>About Me</h2>
-    <p>Hello! I am [Your Name], a [Your Profession] with experience in [Your Expertise].</p>
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hello! I am [Your Name], a [Your Profession] with experience in [Your Expertise].</p>
+      </div>
+      <div class="about-photo">
+        <img src="your-photo.jpg" alt="Your Photo">
+      </div>
+    </div>
   </section>
 
   <section class="resume-section">
