@@ -12,11 +12,11 @@
       margin: 0;
       padding: 0;
       background-color: #2b3a2e; /* Dark Earthy Green */
-      color: #f5f5f5; /* Light, Readable Text */
+      color: #333333; /* Darker, Readable Text */
     }
 
     header {
-      background: #3e5c41; /* Deep Forest Green */
+      background: #2a4531; /* Darker Forest Green */
       color: #ffffff;
       padding: 20px;
       text-align: center;
@@ -32,7 +32,7 @@
 
     .resume-section {
       margin-bottom: 20px;
-      border-left: 5px solid #5a7d5a; /* Muted Green Border */
+      border-left: 5px solid #4a6b4a; /* Muted Green Border */
       padding-left: 10px;
     }
 
@@ -57,7 +57,7 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #3e5c41;
+      background: #2a4531;
       color: #e8f5e9;
       border: none;
       padding: 10px 20px;
@@ -72,17 +72,17 @@
     }
 
     .dark-theme header {
-      background: #2b3a2e;
+      background: #1c3224;
       color: #ffffff;
     }
 
     .dark-theme .theme-toggle {
-      background: #2b3a2e;
+      background: #1c3224;
       color: #e8f5e9;
     }
 
     .dark-theme .resume-section {
-      border-left: 5px solid #5a7d5a; /* Softer Green Border */
+      border-left: 5px solid #4a6b4a; /* Softer Green Border */
     }
   </style>
 </head>
