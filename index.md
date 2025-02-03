@@ -17,7 +17,7 @@
 
     header {
       background: #2a4531; /* Darker Forest Green */
-      color: #ffffff;
+      color: #FDFBD4;
       padding: 20px;
       text-align: center;
       position: sticky;
