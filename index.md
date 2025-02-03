@@ -12,7 +12,7 @@
       margin: 0;
       padding: 0;
       background-color: #2b3a2e; /* Dark Earthy Green */
-      color: #333333; /* Darker, Readable Text */
+      color: #FFFDD0; /* Darker, Readable Text */
     }
 
     header {
