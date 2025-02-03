@@ -156,13 +156,6 @@
   </section>
 </div>
 
-<button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
-
-<script>
-  function toggleTheme() {
-    document.body.classList.toggle('dark-theme');
-  }
-</script>
 
 </body>
 </html>
