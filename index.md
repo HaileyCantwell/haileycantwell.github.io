@@ -1,4 +1,5 @@
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,13 +12,13 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #fff7f0; /* Default Theme: Light Floral */
-      color: #4d4d4d;
+      background-color: #2b3a2e; /* Dark Earthy Green */
+      color: #d4d7b6; /* Soft Neutral Text */
     }
 
     header {
-      background: #f7d9d9; /* Soft Pink Header */
-      color: #4d2c2c;
+      background: #3e5c41; /* Deep Forest Green */
+      color: #e8f5e9;
       padding: 20px;
       text-align: center;
       position: sticky;
@@ -32,7 +33,7 @@
 
     .resume-section {
       margin-bottom: 20px;
-      border-left: 5px solid #f2a6a6; /* Floral Pink Border */
+      border-left: 5px solid #5a7d5a; /* Muted Green Border */
       padding-left: 10px;
     }
 
@@ -40,8 +41,8 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #f7d9d9;
-      color: #4d2c2c;
+      background: #3e5c41;
+      color: #e8f5e9;
       border: none;
       padding: 10px 20px;
       cursor: pointer;
@@ -50,22 +51,22 @@
     }
 
     .dark-theme {
-      background-color: #2e3532; /* Dark Green for Night */
-      color: #f1f1f1;
+      background-color: #1e2a24; /* Even Darker Green */
+      color: #c3c7a6;
     }
 
     .dark-theme header {
-      background: #3a5a40; /* Forest Green Header */
+      background: #2b3a2e;
       color: #e8f5e9;
     }
 
     .dark-theme .theme-toggle {
-      background: #3a5a40;
+      background: #2b3a2e;
       color: #e8f5e9;
     }
 
     .dark-theme .resume-section {
-      border-left: 5px solid #74c69d; /* Soft Green Border */
+      border-left: 5px solid #5a7d5a; /* Softer Green Border */
     }
   </style>
 </head>
@@ -78,23 +79,22 @@
 <div class="content">
   <section class="resume-section">
     <h2>About Me</h2>
-    <p>Hello! I am Hailey Cantwell, a senior at Southern New Hampshire University with experience in Psychology with a concentration in child development and a minor in research.</p>
+    <p>Hello! I am [Your Name], a [Your Profession] with experience in [Your Expertise].</p>
   </section>
 
   <section class="resume-section">
     <h2>Work Experience</h2>
-    <p>Farmsteads of New England 8/2024-Current</p>
-    <p>Psychology Major Ambassador - Southern New Hampshire University 8/2024-Current</p>
+    <p>Include your work experience here.</p>
   </section>
 
   <section class="resume-section">
     <h2>Education</h2>
-    <p>Southern New Hampshire University - Class 2025.</p>
+    <p>List your educational background here.</p>
   </section>
 
   <section class="resume-section">
     <h2>Skills</h2>
-    <p>Research, analytical skills</p>
+    <p>Highlight your skills here.</p>
   </section>
 </div>
 
