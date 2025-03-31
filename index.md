@@ -24,12 +24,7 @@
       left: 0;
       width: 100%;
       z-index: 1000;
-      transition: left 0.3s, width 0.3s;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    header h1, header h3 {
-      margin: 0;
     }
 
     .content {
@@ -62,10 +57,11 @@
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
       transition: width 0.3s;
       overflow: hidden;
+      z-index: 1001;
     }
 
     .sidebar.collapsed {
-      width: 60px;
+      width: 0;
     }
 
     .profile-info {
@@ -95,31 +91,41 @@
     .toggle-btn {
       position: fixed;
       top: 20px;
-      left: 250px;
+      left: 260px;
       background-color: #4a6b4a;
       color: white;
       border: none;
       padding: 10px 20px;
       cursor: pointer;
       border-radius: 5px;
-      z-index: 1001;
+      z-index: 1002;
       transition: left 0.3s;
     }
 
     .toggle-btn.collapsed {
-      left: 60px;
+      left: 10px;
     }
 
-    .project-card {
-      margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 8px;
-      background-color: white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .collapsible {
+      cursor: pointer;
+      padding: 10px;
+      border: none;
+      outline: none;
+      width: 100%;
+      text-align: left;
+      background-color: #4a6b4a;
+      color: white;
+      border-radius: 5px;
+      margin-top: 10px;
     }
 
-    .project-card h3 {
-      color: #2a4531;
+    .collapsible-content {
+      padding: 10px;
+      display: none;
+    }
+
+    .active {
+      display: block;
     }
   </style>
 </head>
@@ -145,7 +151,7 @@
   <h3>Welcome to Hailey Cantwell's GitHub Page!</h3>
 </header>
 
-<div class="content" id="main-content">
+<div class="content">
   <section class="resume-section">
     <h2>About Me</h2>
     <p>Hello! I'm Hailey Cantwell, a senior studying psychology with a concentration in child and adolescent development and a minor in research. I am passionate about understanding and improving the lives of children through research and evidence-based practices.</p>
@@ -153,20 +159,15 @@
 
   <section class="resume-section">
     <h2>Projects & Research</h2>
-    <div class="project-card">
-      <h3>MAT434 Repository</h3>
-      <p>Explore my coursework for MAT434, including research, analysis, and statistical models.</p>
-      <a href="https://haileycantwell.github.io/MAT434/" target="_blank">Visit Repository</a>
+    <button class="collapsible">Projects</button>
+    <div class="collapsible-content">
+      <p><strong>MAT434 Repository:</strong> Explore my coursework for MAT434, including research, analysis, and statistical models. <a href="https://haileycantwell.github.io/MAT434/" target="_blank">Visit Repository</a></p>
     </div>
 
-    <div class="project-card">
-      <h3>Research on Parenting Styles & Screen Time</h3>
-      <p>Researching relationships between parenting styles, parental stress, and children's screen time habits.</p>
-    </div>
-
-    <div class="project-card">
-      <h3>Thesis: Intergenerational Addiction & Technology</h3>
-      <p>Investigating the impact of intergenerational addiction on children's technology-related compulsive behaviors.</p>
+    <button class="collapsible">Research</button>
+    <div class="collapsible-content">
+      <p><strong>Research on Parenting Styles & Screen Time:</strong> Exploring relationships between parenting styles, parental stress, and children's screen time habits.</p>
+      <p><strong>Thesis: Intergenerational Addiction & Technology:</strong> Investigating the impact of intergenerational addiction on children's technology-related compulsive behaviors.</p>
     </div>
   </section>
 </div>
@@ -174,10 +175,18 @@
 <script>
   const sidebar = document.getElementById('sidebar');
   const toggleBtn = document.getElementById('toggle-btn');
+  const collapsibles = document.querySelectorAll('.collapsible');
 
   toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
     toggleBtn.classList.toggle('collapsed');
+  });
+
+  collapsibles.forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      content.classList.toggle('active');
+    });
   });
 </script>
 
