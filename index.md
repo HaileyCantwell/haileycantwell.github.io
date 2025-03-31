@@ -175,7 +175,7 @@
     <h2>Projects & Research</h2>
     <button class="collapsible">Projects</button>
     <div class="collapsible-content">
-      <p><strong>MAT434 Spaceship Repository:</strong> Explore my coursework for MAT434, including research, analysis, and statistical models. <a href="https://haileycantwell.github.io/MAT434.git" class="mint-link" target="_blank">Visit Repository</a></p>
+      <p><strong>MAT434 Spaceship Repository:</strong> Explore my coursework for MAT434, including research, analysis, and statistical models. <a href="https://github.com/HaileyCantwell/MAT434.git" class="mint-link" target="_blank">Visit Repository</a></p>
     </div>
 
     <button class="collapsible">Research</button>
