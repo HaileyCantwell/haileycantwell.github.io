@@ -7,7 +7,6 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
       padding: 0;
       background: linear-gradient(120deg, #d9e4dd, #f0f0f0);
@@ -22,24 +21,15 @@
       text-align: center;
       position: fixed;
       top: 0;
-      left: 250px;
-      width: calc(100% - 250px);
+      left: 0;
+      width: 100%;
       z-index: 1000;
       transition: left 0.3s, width 0.3s;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    header h1 {
-      font-size: 2.2em;
-      margin-bottom: 5px;
-      color: #FDFBD4;
-    }
-
-    header h3 {
-      font-size: 1.2em;
-      font-weight: normal;
-      color: #D0E8D8;
-      margin-top: 0;
+    header h1, header h3 {
+      margin: 0;
     }
 
     .content {
@@ -47,18 +37,17 @@
       margin-left: 250px;
       padding-top: 120px;
       transition: margin-left 0.3s;
-      min-height: 100vh;
       max-width: 1200px;
       margin: auto;
     }
 
     .resume-section {
-      margin-bottom: 20px;
       background: white;
       padding: 20px;
       border-radius: 8px;
       border-left: 5px solid #4a6b4a;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
     }
 
     .sidebar {
@@ -72,12 +61,16 @@
       color: white;
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
       transition: width 0.3s;
-      overflow-y: auto;
+      overflow: hidden;
+    }
+
+    .sidebar.collapsed {
+      width: 60px;
     }
 
     .profile-info {
       text-align: center;
-      padding: 20px;
+      padding: 10px;
     }
 
     .profile-info img {
@@ -91,6 +84,7 @@
     .profile-info a {
       color: #C0E4C8;
       text-decoration: none;
+      display: block;
       transition: color 0.3s;
     }
 
@@ -101,15 +95,31 @@
     .toggle-btn {
       position: fixed;
       top: 20px;
-      left: 10px;
+      left: 250px;
       background-color: #4a6b4a;
       color: white;
       border: none;
-      padding: 12px 18px;
+      padding: 10px 20px;
       cursor: pointer;
-      border-radius: 8px;
-      font-size: 18px;
+      border-radius: 5px;
       z-index: 1001;
+      transition: left 0.3s;
+    }
+
+    .toggle-btn.collapsed {
+      left: 60px;
+    }
+
+    .project-card {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card h3 {
+      color: #2a4531;
     }
   </style>
 </head>
@@ -119,10 +129,10 @@
 <nav id="sidebar" class="sidebar">
   <div class="profile-info">
     <img src="462088368_9126027347429766_7566780716905499347_n.jpg" alt="Hailey Cantwell">
-    <h1>Hailey Cantwell</h1>
-    <p>Location: Concord, NH</p>
-    <p>School: Southern New Hampshire University</p>
-    <p>Degree: Bachelor's in Child and Adolescent Psychology</p>
+    <h2>Hailey Cantwell</h2>
+    <p>Concord, NH</p>
+    <p>Southern New Hampshire University</p>
+    <p>Bachelor's in Child and Adolescent Psychology</p>
     <p><a href="mailto:hailey.cantwell@snhu.edu">Email Me</a></p>
     <p><a href="https://www.linkedin.com/in/hailey-c-7a7204132" target="_blank">LinkedIn Profile</a></p>
   </div>
@@ -142,32 +152,32 @@
   </section>
 
   <section class="resume-section">
-    <h2>Projects & Repositories</h2>
-    <ul>
-      <li><a href="https://haileycantwell.github.io/MAT434/" target="_blank">MAT434 Repository</a></li>
-      <li><a href="https://github.com/haileycantwell/OtherRepo1" target="_blank">Other Repository 1</a></li>
-      <li><a href="https://github.com/haileycantwell/OtherRepo2" target="_blank">Other Repository 2</a></li>
-    </ul>
+    <h2>Projects & Research</h2>
+    <div class="project-card">
+      <h3>MAT434 Repository</h3>
+      <p>Explore my coursework for MAT434, including research, analysis, and statistical models.</p>
+      <a href="https://haileycantwell.github.io/MAT434/" target="_blank">Visit Repository</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Research on Parenting Styles & Screen Time</h3>
+      <p>Researching relationships between parenting styles, parental stress, and children's screen time habits.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Thesis: Intergenerational Addiction & Technology</h3>
+      <p>Investigating the impact of intergenerational addiction on children's technology-related compulsive behaviors.</p>
+    </div>
   </section>
 </div>
 
 <script>
   const sidebar = document.getElementById('sidebar');
   const toggleBtn = document.getElementById('toggle-btn');
-  const content = document.getElementById('main-content');
-  const header = document.querySelector('header');
 
   toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
-    if (sidebar.classList.contains('collapsed')) {
-      content.style.marginLeft = '0';
-      header.style.left = '0';
-      header.style.width = '100%';
-    } else {
-      content.style.marginLeft = '250px';
-      header.style.left = '250px';
-      header.style.width = 'calc(100% - 250px)';
-    }
+    toggleBtn.classList.toggle('collapsed');
   });
 </script>
 
