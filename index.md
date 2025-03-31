@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hailey Cantwell ~ Professional Portfolio </title>
-  <!-- Theme Customization -->
+  <title>Hailey Cantwell - Professional Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #f0f0f0; /* Light Background for Clean Look */
+      background: linear-gradient(120deg, #d9e4dd, #f0f0f0); /* Soft gradient background */
       color: #2b3a2e;
       overflow-x: hidden;
     }
@@ -19,7 +18,7 @@
     header {
       background: #2a4531;
       color: #FDFBD4;
-      padding: 10px;
+      padding: 20px;
       text-align: center;
       position: fixed;
       top: 0;
@@ -27,22 +26,65 @@
       width: calc(100% - 250px);
       z-index: 1000;
       transition: left 0.3s, width 0.3s;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+
+    header h3 {
+      font-size: 1.2em;
+      font-weight: normal;
+      color: #D0E8D8;
+      margin-top: 0;
     }
 
     .content {
       padding: 20px;
       margin-left: 250px;
-      padding-top: 80px;
+      padding-top: 120px;
       transition: margin-left 0.3s;
+      min-height: 100vh;
+      max-width: 1200px;
     }
 
     .resume-section {
       margin-bottom: 20px;
       background: white;
-      padding: 15px;
+      padding: 20px;
       border-radius: 8px;
       border-left: 5px solid #4a6b4a;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .about-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about-text p {
+      text-align: justify;
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .profile-info img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
     }
 
     .sidebar {
@@ -78,52 +120,9 @@
       z-index: 1001;
     }
 
-    .sidebar h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .sidebar ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .sidebar ul li {
-      padding: 10px;
-      text-align: center;
-    }
-
-    .sidebar ul li a {
-      color: #FDFBD4;
-      text-decoration: none;
-      display: block;
-      padding: 10px;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-
-    .sidebar ul li a:hover {
-      background-color: #4a6b4a;
-    }
-
-    .profile-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 15px;
-    }
-
-    .profile-info img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-    }
-
-    .profile-info h1, .profile-info p {
-      text-align: center;
-      margin: 5px 0;
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
     }
   </style>
 </head>
@@ -149,16 +148,21 @@
 
 <header>
   <h1>Hailey Cantwell - Professional Portfolio</h1>
+  <h3>Welcome to Hailey Cantwell's GitHub Page!</h3>
 </header>
 
 <div class="content" id="main-content">
   <section class="resume-section">
     <h2>About Me</h2>
-    <p>I am a senior studying psychology with a concentration in child and adolescent development and a minor in research. I am a critical thinker who thrives in fast-paced environments. I enjoy expanding my knowledge and applying it to real-world projects. Check out my LinkedIn profile: <a href="http://www.linkedin.com/in/hailey-c-7a7204132" target="_blank">Hailey Cantwell</a></p>
-  </section>
-  <section class="resume-section">
-    <h2>Projects</h2>
-    <p>Explore the various projects I've completed throughout my coursework and independent research.</p>
+    <div class="about-container">
+      <div class="about-text">
+        <p>Hello! I'm Hailey Cantwell, a senior studying psychology with a concentration in child and adolescent development and a minor in research. I am passionate about understanding and improving the lives of children through research and evidence-based practices. </p>
+        
+        <p>I'm currently conducting research examining relationships between parenting styles, parental stress, and children's screen time habits. Additionally, my thesis explores intergenerational addiction's impact on children's technology-related compulsive behaviors.</p>
+        
+        <p>My skills include research analysis, data visualization, and report writing. Feel free to explore my projects below!</p>
+      </div>
+    </div>
   </section>
 </div>
 
