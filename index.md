@@ -10,7 +10,7 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: linear-gradient(120deg, #d9e4dd, #f0f0f0); /* Soft gradient background */
+      background: linear-gradient(120deg, #d9e4dd, #f0f0f0);
       color: #2b3a2e;
       overflow-x: hidden;
     }
@@ -30,8 +30,9 @@
     }
 
     header h1 {
-      font-size: 2em;
+      font-size: 2.2em;
       margin-bottom: 5px;
+      color: #FDFBD4;
     }
 
     header h3 {
@@ -48,6 +49,7 @@
       transition: margin-left 0.3s;
       min-height: 100vh;
       max-width: 1200px;
+      margin: auto;
     }
 
     .resume-section {
@@ -57,34 +59,6 @@
       border-radius: 8px;
       border-left: 5px solid #4a6b4a;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      animation: fadeIn 0.5s ease-in-out;
-    }
-
-    .about-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .about-text p {
-      text-align: justify;
-    }
-
-    .profile-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 15px;
-    }
-
-    .profile-info img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
     }
 
     .sidebar {
@@ -106,6 +80,36 @@
       overflow: hidden;
     }
 
+    .profile-info {
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+
+    .profile-info img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      color: #C0E4C8;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+      transition: color 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      color: #FDFBD4;
+    }
+
+    .about-text p {
+      text-align: justify;
+    }
+
     .toggle-btn {
       position: fixed;
       top: 20px;
@@ -118,11 +122,6 @@
       border-radius: 8px;
       font-size: 18px;
       z-index: 1001;
-    }
-
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
     }
   </style>
 </head>
@@ -154,15 +153,12 @@
 <div class="content" id="main-content">
   <section class="resume-section">
     <h2>About Me</h2>
-    <div class="about-container">
-      <div class="about-text">
-        <p>Hello! I'm Hailey Cantwell, a senior studying psychology with a concentration in child and adolescent development and a minor in research. I am passionate about understanding and improving the lives of children through research and evidence-based practices. </p>
-        
-        <p>I'm currently conducting research examining relationships between parenting styles, parental stress, and children's screen time habits. Additionally, my thesis explores intergenerational addiction's impact on children's technology-related compulsive behaviors.</p>
-        
-        <p>My skills include research analysis, data visualization, and report writing. Feel free to explore my projects below!</p>
-      </div>
-    </div>
+    <p>Hello! I'm Hailey Cantwell, a senior studying psychology with a concentration in child and adolescent development and a minor in research. I am passionate about understanding and improving the lives of children through research and evidence-based practices.</p>
+  </section>
+  
+  <section class="resume-section">
+    <h2>Projects</h2>
+    <p>Explore my projects listed on this page. More coming soon!</p>
   </section>
 </div>
 
