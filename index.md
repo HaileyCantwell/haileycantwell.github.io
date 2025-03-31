@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,6 +13,7 @@
       padding: 0;
       background-color: #2b3a2e; /* Dark Earthy Green */
       color: #000000; /* Darker, Readable Text */
+      transition: margin-left 0.3s;
     }
 
     header {
@@ -28,6 +29,8 @@
 
     .content {
       padding: 20px;
+      margin-left: 260px; /* Adjusted to make space for the sidebar */
+      transition: margin-left 0.3s;
     }
 
     .resume-section {
@@ -66,34 +69,95 @@
       font-weight: bold;
     }
 
-    .dark-theme {
-      background-color: #1e2a24; /* Even Darker Green */
-      color: #ffffff;
+    /* Sidebar Styles */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 250px;
+      background-color: #2a4531; /* Darker Forest Green */
+      padding-top: 20px;
+      color: #FDFBD4;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      transition: width 0.3s;
+      overflow-x: hidden;
     }
 
-    .dark-theme header {
-      background: #1c3224;
-      color: #ffffff;
+    .sidebar h2 {
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: 20px;
     }
 
-    .dark-theme .theme-toggle {
-      background: #1c3224;
-      color: #e8f5e9;
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
     }
 
-    .dark-theme .resume-section {
-      border-left: 5px solid #4a6b4a; /* Softer Green Border */
+    .sidebar ul li {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .sidebar ul li a {
+      color: #FDFBD4;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      background-color: #4a6b4a; /* Muted Green */
+    }
+
+    .sidebar.collapsed {
+      width: 60px;
+    }
+
+    .content.collapsed {
+      margin-left: 60px;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      left: 260px;
+      background-color: #2a4531;
+      color: #FDFBD4;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      transition: left 0.3s;
+    }
+
+    .toggle-btn.collapsed {
+      left: 60px;
     }
   </style>
 </head>
 <body>
+
+<!-- Side Navigation Bar -->
+<nav id="sidebar" class="sidebar">
+  <h2>Repositories</h2>
+  <ul>
+    <li><a href="https://haileycantwell.github.io/MAT434/" target="_blank">MAT434 Repository</a></li>
+    <li><a href="https://github.com/haileycantwell/OtherRepo1" target="_blank">Other Repository 1</a></li>
+    <li><a href="https://github.com/haileycantwell/OtherRepo2" target="_blank">Other Repository 2</a></li>
+  </ul>
+</nav>
+
+<button id="toggle-btn" class="toggle-btn">☰</button>
 
 <header>
   <h1>Hailey Cantwell</h1>
   <p>Concord, NH | hailey.cantwell@snhu.edu </p>
 </header>
 
-<div class="content">
+<div class="content" id="main-content">
   <section class="resume-section">
     <div class="about-container">
       <div class="about-text">
@@ -105,57 +169,20 @@
       </div>
     </div>
   </section>
-
-  <section class="resume-section">
-    <h2>Work Experience</h2>
-    <p><strong>DSP (Direct Support Professional)</strong> - <i>Farmsteads of New England, Inc. (Aug 2024 - Present) </i></p>
-    <p>Support adults with intellectual and developmental disabilities in a residential setting</p>
-
-    <p><strong> Psychology Major Ambassador</strong> - <i>Southern New Hampshire University (Aug 2024 - Present) </i></p>
-    <p>Develop posts and events to enhance first-year psychology students' academic and social experiences</p>
-    <p><strong>Server/Bartender</strong> - <i>The Barley House (Apr 2021 - Aug 2024)</i></p>
-    <p>Ensure customer satisfaction, prepare drinks, manage service operations</p>
-    
-    <p><strong>Teacher's Assistant</strong> - <i>Children’s Central Learning Center (Jun 2019 - Aug 2019)</i></p>
-    <p>Worked with children from infants to PreK, assisting teachers and facilitating activities...</p>
-  </section>
-
-  <section class="resume-section">
-    <h2>Education</h2>
-    <p><strong>Bachelor's in Child and Adolescent Psychology</strong> - <i> Southern New Hampshire University (Aug 2023 - May 2025)</i></p>
-    <p><strong>Early Childhood & Special Education</strong> - <i> Arcadia University (Aug 2018 - Dec 2020) </i></p>
-  </section>
-
-  <section class="resume-section">
-    <h2>Volunteer Work</h2>
-    <p><strong>Volunteer</strong> - <i>21st Century Afterschool Program (Sep 2024 - Dec 2024)</i></p>
-    <p>Assisted teachers and students with classroom management and educational activities...</p>
-    
-    <p><strong>Volunteer Teacher's Assistant</strong> - <i>Gemma Services (Sep 2019 - Mar 2020)</i></p>
-    <p>Worked with students with emotional disturbances, assisting in small group lessons...</p>
-    
-  </section>
-
-  <section class="resume-section">
-    <h2>Skills</h2>
-    <ul>
-      <li>Patient Observation</li>
-      <li>Early Childhood Education</li>
-      <li>Behavioral Health</li>
-      <li>Customer Service</li>
-      <li>Time Management</li>
-      <li>Communication Skills</li>
-    </ul>
-  </section>
-
-  <section class="resume-section">
-    <h2>My Work</h2>
-    <p>Actively conducting a study on the potential relationship between parental stress and parenting type on elementary school-aged children's screen time and executive functioning. </p> 
-    <p>Completing thesis study on potential risk factors that may exist between parents with substance addictions and childhood social media addiction.</p>
-    <p>Conducted study to better understand the potential impacts between music and selective attention </p>
-  </section>
 </div>
 
+<!-- JavaScript for Toggle Button -->
+<script>
+  const sidebar = document.getElementById('sidebar');
+  const content = document.getElementById('main-content');
+  const toggleBtn = document.getElementById('toggle-btn');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+    content.classList.toggle('collapsed');
+    toggleBtn.classList.toggle('collapsed');
+  });
+</script>
 
 </body>
 </html>
