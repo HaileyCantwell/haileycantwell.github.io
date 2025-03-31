@@ -127,6 +127,20 @@
     .active {
       display: block;
     }
+
+    h3.mint-color {
+      color: #C0E4C8; /* Mint Color */
+    }
+
+    a.mint-link {
+      color: #C0E4C8; /* Mint Color */
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a.mint-link:hover {
+      color: #FDFBD4;
+    }
   </style>
 </head>
 <body>
@@ -148,7 +162,7 @@
 
 <header>
   <h1>Hailey Cantwell - Professional Portfolio</h1>
-  <h3>Welcome to Hailey Cantwell's GitHub Page!</h3>
+  <h3 class="mint-color">Welcome to Hailey Cantwell's GitHub Page!</h3>
 </header>
 
 <div class="content">
@@ -161,7 +175,7 @@
     <h2>Projects & Research</h2>
     <button class="collapsible">Projects</button>
     <div class="collapsible-content">
-      <p><strong>MAT434 Repository:</strong> Explore my coursework for MAT434, including research, analysis, and statistical models. <a href="https://haileycantwell.github.io/MAT434.git" target="_blank">Visit Repository</a></p>
+      <p><strong>MAT434 Spaceship Repository:</strong> Explore my coursework for MAT434, including research, analysis, and statistical models. <a href="https://haileycantwell.github.io/MAT434.git" class="mint-link" target="_blank">Visit Repository</a></p>
     </div>
 
     <button class="collapsible">Research</button>
