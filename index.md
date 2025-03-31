@@ -13,7 +13,7 @@
       padding: 0;
       background-color: #2b3a2e; /* Dark Earthy Green */
       color: #000000; /* Darker, Readable Text */
-      transition: margin-left 0.3s;
+      overflow-x: hidden;
     }
 
     header {
@@ -21,15 +21,19 @@
       color: #FDFBD4;
       padding: 20px;
       text-align: center;
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 250px; /* Align with the sidebar */
+      width: calc(100% - 250px); /* Make header take remaining width */
       z-index: 1000;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: left 0.3s, width 0.3s;
     }
 
     .content {
       padding: 20px;
-      margin-left: 260px; /* Adjusted to make space for the sidebar */
+      margin-left: 250px;
+      padding-top: 100px; /* To prevent overlap with the header */
       transition: margin-left 0.3s;
     }
 
@@ -77,11 +81,11 @@
       height: 100%;
       width: 250px;
       background-color: #2a4531; /* Darker Forest Green */
-      padding-top: 20px;
+      padding-top: 60px;
       color: #FDFBD4;
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
       transition: width 0.3s;
-      overflow-x: hidden;
+      overflow-y: auto;
     }
 
     .sidebar h2 {
@@ -124,13 +128,14 @@
     .toggle-btn {
       position: fixed;
       top: 20px;
-      left: 260px;
+      left: 250px;
       background-color: #2a4531;
       color: #FDFBD4;
       border: none;
       padding: 10px;
       cursor: pointer;
       transition: left 0.3s;
+      z-index: 1001;
     }
 
     .toggle-btn.collapsed {
@@ -176,11 +181,20 @@
   const sidebar = document.getElementById('sidebar');
   const content = document.getElementById('main-content');
   const toggleBtn = document.getElementById('toggle-btn');
+  const header = document.querySelector('header');
 
   toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
     content.classList.toggle('collapsed');
     toggleBtn.classList.toggle('collapsed');
+
+    if (sidebar.classList.contains('collapsed')) {
+      header.style.left = '60px';
+      header.style.width = 'calc(100% - 60px)';
+    } else {
+      header.style.left = '250px';
+      header.style.width = 'calc(100% - 250px)';
+    }
   });
 </script>
 
