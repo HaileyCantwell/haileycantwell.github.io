@@ -69,21 +69,15 @@
       width: 250px;
       background-color: #2a4531;
       padding-top: 20px;
-      color: #FDFBD4;
+      color: white;
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
       transition: width 0.3s;
       overflow-y: auto;
     }
 
-    .sidebar.collapsed {
-      width: 0;
-      overflow: hidden;
-    }
-
     .profile-info {
       text-align: center;
       padding: 20px;
-      color: white;
     }
 
     .profile-info img {
@@ -94,20 +88,14 @@
       margin-bottom: 10px;
     }
 
-    .sidebar ul li a {
+    .profile-info a {
       color: #C0E4C8;
       text-decoration: none;
-      padding: 10px;
-      display: block;
       transition: color 0.3s;
     }
 
-    .sidebar ul li a:hover {
+    .profile-info a:hover {
       color: #FDFBD4;
-    }
-
-    .about-text p {
-      text-align: justify;
     }
 
     .toggle-btn {
@@ -132,15 +120,12 @@
   <div class="profile-info">
     <img src="462088368_9126027347429766_7566780716905499347_n.jpg" alt="Hailey Cantwell">
     <h1>Hailey Cantwell</h1>
-    <p>Concord, NH</p>
-    <p>hailey.cantwell@snhu.edu</p>
+    <p>Location: Concord, NH</p>
+    <p>School: Southern New Hampshire University</p>
+    <p>Degree: Bachelor's in Child and Adolescent Psychology</p>
+    <p><a href="mailto:hailey.cantwell@snhu.edu">Email Me</a></p>
+    <p><a href="https://www.linkedin.com/in/hailey-c-7a7204132" target="_blank">LinkedIn Profile</a></p>
   </div>
-  <h2>Repositories</h2>
-  <ul>
-    <li><a href="https://haileycantwell.github.io/MAT434/" target="_blank">MAT434 Repository</a></li>
-    <li><a href="https://github.com/haileycantwell/OtherRepo1" target="_blank">Other Repository 1</a></li>
-    <li><a href="https://github.com/haileycantwell/OtherRepo2" target="_blank">Other Repository 2</a></li>
-  </ul>
 </nav>
 
 <button id="toggle-btn" class="toggle-btn">☰ Menu</button>
@@ -155,10 +140,14 @@
     <h2>About Me</h2>
     <p>Hello! I'm Hailey Cantwell, a senior studying psychology with a concentration in child and adolescent development and a minor in research. I am passionate about understanding and improving the lives of children through research and evidence-based practices.</p>
   </section>
-  
+
   <section class="resume-section">
-    <h2>Projects</h2>
-    <p>Explore my projects listed on this page. More coming soon!</p>
+    <h2>Projects & Repositories</h2>
+    <ul>
+      <li><a href="https://haileycantwell.github.io/MAT434/" target="_blank">MAT434 Repository</a></li>
+      <li><a href="https://github.com/haileycantwell/OtherRepo1" target="_blank">Other Repository 1</a></li>
+      <li><a href="https://github.com/haileycantwell/OtherRepo2" target="_blank">Other Repository 2</a></li>
+    </ul>
   </section>
 </div>
 
