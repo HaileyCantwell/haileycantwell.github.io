@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -33,7 +33,6 @@
       padding-top: 120px;
       transition: margin-left 0.3s;
       max-width: 1200px;
-      margin: auto;
     }
 
     .resume-section {
@@ -52,11 +51,11 @@
       height: 100%;
       width: 250px;
       background-color: #2a4531;
-      padding-top: 20px;
+      padding-top: 100px;
       color: white;
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
       transition: width 0.3s;
-      overflow: hidden;
+      overflow-x: hidden;
       z-index: 1001;
     }
 
@@ -70,8 +69,8 @@
     }
 
     .profile-info img {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 10px;
@@ -81,6 +80,7 @@
       color: #C0E4C8;
       text-decoration: none;
       display: block;
+      margin: 5px 0;
       transition: color 0.3s;
     }
 
@@ -129,17 +129,41 @@
     }
 
     h3.mint-color {
-      color: #C0E4C8; /* Mint Color */
+      color: #C0E4C8;
     }
 
     a.mint-link {
-      color: #C0E4C8; /* Mint Color */
+      color: #C0E4C8;
       text-decoration: none;
       transition: color 0.3s;
     }
 
     a.mint-link:hover {
       color: #FDFBD4;
+    }
+
+    /* 📱 Responsive Mobile Tweaks */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 0;
+      }
+
+      .content {
+        margin-left: 0;
+        padding-top: 100px;
+      }
+
+      .toggle-btn {
+        left: 10px;
+      }
+
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      header h3 {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
@@ -171,34 +195,30 @@
     <p>Hello! I'm Hailey Cantwell, a senior studying psychology with a concentration in child and adolescent development and a minor in research. I am passionate about understanding and improving the lives of children through research and evidence-based practices.</p>
   </section>
 
-<section class="resume-section">
-  <h2>Projects & Research</h2>
+  <section class="resume-section">
+    <h2>Projects & Research</h2>
 
-  <!-- Projects Collapsible -->
-  <button class="collapsible">Projects</button>
-  <div class="collapsible-content">
-    <p><strong>MAT434 Spaceship Repository:</strong> Explore my coursework for MAT434, including research, analysis, and statistical models.  
-      <a href="https://github.com/HaileyCantwell/MAT434" class="mint-link" target="_blank">Visit Repository</a>
-    </p>
+    <button class="collapsible">Projects</button>
+    <div class="collapsible-content">
+      <p><strong>MAT434 Spaceship Repository:</strong> Explore my coursework for MAT434, including research, analysis, and statistical models.  
+        <a href="https://github.com/HaileyCantwell/MAT434" class="mint-link" target="_blank">Visit Repository</a>
+      </p>
+      <p><strong>Final RStudio Report:</strong> View the complete R Markdown project output.  
+        <a href="https://github.com/HaileyCantwell/MAT434/blob/main/final_report.Rmd" class="mint-link" target="_blank">View Report</a>
+      </p>
+    </div>
 
-    <p><strong>Final RStudio Report:</strong> View the complete R Markdown project output for data analysis and modeling work.  
-      <a href="https://github.com/HaileyCantwell/MAT434/blob/main/final_report.Rmd" class="mint-link" target="_blank">View Report</a>
-    </p>
-  </div>
-
-  <!-- Research Collapsible -->
-  <button class="collapsible">Research</button>
-  <div class="collapsible-content">
-    <p><strong>Completed Thesis - "Inherited Vulnerability":</strong> My senior thesis exploring intergenerational addiction and technology-related compulsive behaviors in children.  
-      <a href="https://github.com/HaileyCantwell/haileycantwell.github.io/raw/main/SiteFiles/Inherited%20Vulnerability.pdf" class="mint-link" target="_blank">View Thesis (PDF)</a>
-    </p>
-
-    <p><strong>Independent Study - "Parenting Under Pressure":</strong> Research examining the relationship between parenting stress, parenting styles, children's screen time, and behavioral outcomes.  
-      <a href="https://github.com/HaileyCantwell/haileycantwell.github.io/raw/main/SiteFiles/Parenting%20Under%20Pressure.pdf" class="mint-link" target="_blank">View Independent Study (PDF)</a>
-    </p>
-  </div>
-</section>
-
+    <button class="collapsible">Research</button>
+    <div class="collapsible-content">
+      <p><strong>Completed Thesis - "Inherited Vulnerability":</strong> Exploring intergenerational addiction and technology-related compulsive behaviors.  
+        <a href="https://github.com/HaileyCantwell/haileycantwell.github.io/raw/main/SiteFiles/Inherited%20Vulnerability.pdf" class="mint-link" target="_blank">View Thesis (PDF)</a>
+      </p>
+      <p><strong>Independent Study - "Parenting Under Pressure":</strong> Research on parenting stress, screen time, and child behavior.  
+        <a href="https://github.com/HaileyCantwell/haileycantwell.github.io/raw/main/SiteFiles/Parenting%20Under%20Pressure.pdf" class="mint-link" target="_blank">View Independent Study (PDF)</a>
+      </p>
+    </div>
+  </section>
+</div>
 
 <script>
   const sidebar = document.getElementById('sidebar');
@@ -218,5 +238,3 @@
   });
 </script>
 
-</body>
-</html>
