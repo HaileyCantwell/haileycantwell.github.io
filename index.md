@@ -200,11 +200,8 @@
 
     <button class="collapsible">Projects</button>
     <div class="collapsible-content">
-      <p><strong>MAT434 Spaceship Repository:</strong> Explore my coursework for MAT434, including research, analysis, and statistical models.  
-        <a href="https://github.com/HaileyCantwell/MAT434" class="mint-link" target="_blank">Visit Repository</a>
-      </p>
-      <p><strong>Final RStudio Report:</strong> View the complete R Markdown project output.  
-        <a href="https://github.com/HaileyCantwell/MAT434/blob/main/final_report.Rmd" class="mint-link" target="_blank">View Report</a>
+      <p><strong>Data Analysis: Technology Use and Mental Health:</strong> View the complete R Markdown project output.  
+        <a href="<a href="https://haileycantwell.github.io/MAT434/Final%20Project/final_proj.html" class="mint-link" target="_blank">View Report</a>
       </p>
     </div>
 
