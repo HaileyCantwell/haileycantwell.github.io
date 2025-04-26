@@ -27,13 +27,20 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    .content {
-      padding: 20px;
-      margin-left: 250px;
-      padding-top: 120px;
-      transition: margin-left 0.3s;
-      max-width: 1200px;
-    }
+   .content {
+  padding: 20px;
+  padding-top: 120px;
+  margin: auto;
+  max-width: 1000px; /* Reduce a little to keep it more comfortable */
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 769px) {
+  .content {
+    margin-left: 250px;
+    max-width: calc(100% - 270px); /* Automatically adjust size when sidebar is there */
+  }
+}
 
     .resume-section {
       background: white;
@@ -200,9 +207,10 @@
 
     <button class="collapsible">Projects</button>
     <div class="collapsible-content">
-      <p><strong>Data Analysis: Technology Use and Mental Health:</strong> View the complete R Markdown project output.  
-        <a href="<a href="https://haileycantwell.github.io/MAT434/Final%20Project/final_proj.html" class="mint-link" target="_blank">View Report</a>
-      </p>
+     <p><strong>Data Analysis: Technology Use and Mental Health:</strong> View the complete R Markdown project output.  
+  <a href="https://haileycantwell.github.io/MAT434/Final%20Project/final_proj.html" class="mint-link" target="_blank">View Report</a>
+</p>
+
     </div>
 
     <button class="collapsible">Research</button>
