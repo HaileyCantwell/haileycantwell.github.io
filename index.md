@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -27,20 +26,20 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-   .content {
-  padding: 20px;
-  padding-top: 120px;
-  margin: auto;
-  max-width: 1000px; /* Reduce a little to keep it more comfortable */
-  transition: all 0.3s ease;
-}
+    .content {
+      padding: 20px;
+      padding-top: 120px;
+      margin: auto;
+      max-width: 1000px;
+      transition: all 0.3s ease;
+    }
 
-@media (min-width: 769px) {
-  .content {
-    margin-left: 250px;
-    max-width: calc(100% - 270px); /* Automatically adjust size when sidebar is there */
-  }
-}
+    @media (min-width: 769px) {
+      .content {
+        margin-left: 250px;
+        max-width: calc(100% - 270px);
+      }
+    }
 
     .resume-section {
       background: white;
@@ -149,7 +148,6 @@
       color: #FDFBD4;
     }
 
-    /* 📱 Responsive Mobile Tweaks */
     @media (max-width: 768px) {
       .sidebar {
         width: 0;
@@ -179,7 +177,7 @@
 <!-- Sidebar -->
 <nav id="sidebar" class="sidebar">
   <div class="profile-info">
-    <img src="462088368_9126027347429766_7566780716905499347_n.jpg" alt="Hailey Cantwell">
+    <img src="https://github.com/HaileyCantwell/haileycantwell.github.io/raw/main/SiteFiles/DSC02627.JPG" alt="Hailey Cantwell">
     <h2>Hailey Cantwell</h2>
     <p>Concord, NH</p>
     <p>Southern New Hampshire University</p>
@@ -207,10 +205,9 @@
 
     <button class="collapsible">Projects</button>
     <div class="collapsible-content">
-     <p><strong>Data Analysis: Technology Use and Mental Health:</strong> View the complete R Markdown project output.  
-  <a href="https://haileycantwell.github.io/MAT434/Final%20Project/final_proj.html" class="mint-link" target="_blank">View Report</a>
-</p>
-
+      <p><strong>Data Analysis: Technology Use and Mental Health:</strong> View the complete R Markdown project output.  
+        <a href="https://haileycantwell.github.io/MAT434/Final%20Project/final_proj.html" class="mint-link" target="_blank">View Report</a>
+      </p>
     </div>
 
     <button class="collapsible">Research</button>
@@ -220,6 +217,9 @@
       </p>
       <p><strong>Independent Study - "Parenting Under Pressure":</strong> Research on parenting stress, screen time, and child behavior.  
         <a href="https://github.com/HaileyCantwell/haileycantwell.github.io/raw/main/SiteFiles/Parenting%20Under%20Pressure.pdf" class="mint-link" target="_blank">View Independent Study (PDF)</a>
+      </p>
+      <p><strong>Experimental Study - "Does Music Type Impact Emotion?":</strong> Examining how different genres influence emotional states through a controlled design.  
+        <a href="https://github.com/HaileyCantwell/haileycantwell.github.io/raw/main/SiteFiles/Does%20Music%20Type%20Impact%20Emotion%3F%20.pdf" class="mint-link" target="_blank">View Research (PDF)</a>
       </p>
     </div>
   </section>
@@ -242,4 +242,5 @@
     });
   });
 </script>
-
+</body>
+</html>
