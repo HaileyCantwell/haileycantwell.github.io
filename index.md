@@ -197,7 +197,7 @@
 <div class="content">
   <section class="resume-section">
     <h2>About Me</h2>
-    <p>Hello! I'm Hailey Cantwell and am looking to begin my career in behavioral research. I recently obtained my B.A. in Psychology with a concentration in Child and Adolescent Development and a minor in Research. </p>
+    <p>Hello! I'm Hailey Cantwell, and I am actively looking to begin my career in behavioral research. I recently obtained my B.A. in Psychology with a concentration in Child and Adolescent Development and a minor in Research. </p>
   </section>
 
   <section class="resume-section">
