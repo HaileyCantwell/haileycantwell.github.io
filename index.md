@@ -28,17 +28,9 @@
 
     .content {
       padding: 20px;
-      padding-top: 120px;
+      padding-top: 140px;
       margin: auto;
-      max-width: 1000px;
-      transition: all 0.3s ease;
-    }
-
-    @media (min-width: 769px) {
-      .content {
-        margin-left: 250px;
-        max-width: calc(100% - 270px);
-      }
+      max-width: 800px;
     }
 
     .resume-section {
@@ -50,28 +42,10 @@
       margin-bottom: 20px;
     }
 
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 250px;
-      background-color: #2a4531;
-      padding-top: 100px;
-      color: white;
-      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-      transition: width 0.3s;
-      overflow-x: hidden;
-      z-index: 1001;
-    }
-
-    .sidebar.collapsed {
-      width: 0;
-    }
-
     .profile-info {
       text-align: center;
       padding: 10px;
+      margin-bottom: 20px;
     }
 
     .profile-info img {
@@ -83,7 +57,7 @@
     }
 
     .profile-info a {
-      color: #C0E4C8;
+      color: #4a6b4a;
       text-decoration: none;
       display: block;
       margin: 5px 0;
@@ -91,25 +65,7 @@
     }
 
     .profile-info a:hover {
-      color: #FDFBD4;
-    }
-
-    .toggle-btn {
-      position: fixed;
-      top: 20px;
-      left: 260px;
-      background-color: #4a6b4a;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 5px;
-      z-index: 1002;
-      transition: left 0.3s;
-    }
-
-    .toggle-btn.collapsed {
-      left: 10px;
+      color: #2a4531;
     }
 
     .collapsible {
@@ -149,19 +105,6 @@
     }
 
     @media (max-width: 768px) {
-      .sidebar {
-        width: 0;
-      }
-
-      .content {
-        margin-left: 0;
-        padding-top: 100px;
-      }
-
-      .toggle-btn {
-        left: 10px;
-      }
-
       header h1 {
         font-size: 1.5em;
       }
@@ -174,8 +117,13 @@
 </head>
 <body>
 
-<!-- Sidebar -->
-<nav id="sidebar" class="sidebar">
+<header>
+  <h1>Hailey Cantwell - Professional Portfolio</h1>
+  <h3 class="mint-color">Welcome to Hailey Cantwell's GitHub Page!</h3>
+</header>
+
+<div class="content">
+
   <div class="profile-info">
     <img src="https://github.com/HaileyCantwell/haileycantwell.github.io/raw/main/SiteFiles/DSC02627.JPG" alt="Hailey Cantwell">
     <h2>Hailey Cantwell</h2>
@@ -185,16 +133,7 @@
     <p><a href="mailto:hailey.cantwell@snhu.edu">Email Me</a></p>
     <p><a href="https://www.linkedin.com/in/hailey-c-7a7204132" target="_blank">LinkedIn Profile</a></p>
   </div>
-</nav>
 
-<button id="toggle-btn" class="toggle-btn">☰ Menu</button>
-
-<header>
-  <h1>Hailey Cantwell - Professional Portfolio</h1>
-  <h3 class="mint-color">Welcome to Hailey Cantwell's GitHub Page!</h3>
-</header>
-
-<div class="content">
   <section class="resume-section">
     <h2>About Me</h2>
     <p>Hello! I'm Hailey Cantwell, and I am actively looking to begin my career in behavioral research. I recently obtained my B.A. in Psychology with a concentration in Child and Adolescent Development and a minor in Research. </p>
@@ -223,18 +162,11 @@
       </p>
     </div>
   </section>
+
 </div>
 
 <script>
-  const sidebar = document.getElementById('sidebar');
-  const toggleBtn = document.getElementById('toggle-btn');
   const collapsibles = document.querySelectorAll('.collapsible');
-
-  toggleBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('collapsed');
-    toggleBtn.classList.toggle('collapsed');
-  });
-
   collapsibles.forEach(button => {
     button.addEventListener('click', () => {
       const content = button.nextElementSibling;
@@ -242,5 +174,6 @@
     });
   });
 </script>
+
 </body>
 </html>
