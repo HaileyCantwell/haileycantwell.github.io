@@ -130,7 +130,7 @@
     <p>Concord, NH</p>
     <p>Southern New Hampshire University</p>
     <p>Bachelor's in Child and Adolescent Psychology</p>
-    <p><a href="mailto:hailey.cantwell@snhu.edu">Email Me</a></p>
+    <p><a href="mailto:hailey.cantwell@outlook.com">Email Me</a></p>
     <p><a href="https://www.linkedin.com/in/hailey-c-7a7204132" target="_blank">LinkedIn Profile</a></p>
   </div>
 
